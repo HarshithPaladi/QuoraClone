@@ -55,7 +55,7 @@ function Post({ post }) {
         .post("/api/answers", body, config)
         .then((res) => {
           console.log(res.data);
-          // alert("Answer added succesfully");
+          alert("Answer added succesfully");
           setIsModalOpen(false);
           window.location.href = "/";
         })

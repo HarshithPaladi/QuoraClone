@@ -4,16 +4,15 @@ import {getAuth, GoogleAuthProvider} from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
 const firebaseConfig = {
-  apiKey: "AIzaSyCe35gpcrUgG5RWx9g0DJM6ysQi6rfXBRo",
-  authDomain: "quora-clone-956b0.firebaseapp.com",
-  projectId: "quora-clone-956b0",
-  storageBucket: "quora-clone-956b0.appspot.com",
-  messagingSenderId: "762778492215",
-  appId: "1:762778492215:web:49b56369a5dace12454eb2",
-  measurementId: "G-2KNJEBDK8S"
+  apiKey: "AIzaSyAnWAI-7v06JByaZbmrvxHFtRZNNlWVltg",
+  authDomain: "quoraclone-9a6e0.firebaseapp.com",
+  projectId: "quoraclone-9a6e0",
+  storageBucket: "quoraclone-9a6e0.appspot.com",
+  messagingSenderId: "766041162875",
+  appId: "1:766041162875:web:00371d1f6996683b458ede",
+  measurementId: "G-Q8MQ3LKLSJ",
 };
 
 // Initialize Firebase
@@ -21,4 +20,4 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 const provider = new GoogleAuthProvider();
 
-export {auth, provider};
+export {auth, provider, app};

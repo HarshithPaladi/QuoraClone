@@ -1,13 +1,14 @@
 import React from "react";
 import "./Login.css";
 import { signInWithPopup } from "firebase/auth";
-import { auth, provider } from "../../firebase";
+import { auth, provider, app } from "../../firebase";
 
 function Login() {
   const handleSubmit = async () => {
     await signInWithPopup(auth, provider)
       .then((result) => {
         console.log(result);
+        console.log(app)
       })
       .catch((error) => {
         console.log(error);
